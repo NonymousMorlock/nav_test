@@ -11,7 +11,7 @@ typedef PageStack = List<Widget>;
 class NavigationBLoC {
   final PageStack _stack = [const Home()];
 
-  final StreamController<List<Widget>> _controller = StreamController();
+  final StreamController<PageStack> _controller = StreamController();
 
   Stream<PageStack> get stream => _controller.stream;
 
